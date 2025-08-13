@@ -1,4 +1,3 @@
-"""
 # 2D Physics Simulator
 
 A production-ready 2D physics engine with visualization capabilities built in Python.
@@ -231,5 +230,5 @@ The modular design allows easy extension:
 ## License
 
 This physics simulator is provided as a complete, production-ready implementation for educational and research purposes.
-"""
+
 
