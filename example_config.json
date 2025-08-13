@@ -1,0 +1,64 @@
+{
+  "engine": {
+    "integrator": "semi_implicit_euler",
+    "dt": 0.016,
+    "bounds": [-10, -8, 10, 8],
+    "use_spatial_acceleration": true,
+    "spatial_type": "grid"
+  },
+  "collision": {
+    "restitution": 0.7,
+    "friction": 0.2
+  },
+  "objects": [
+    {
+      "type": "Circle",
+      "id": "ball1",
+      "position": [-3, 4],
+      "velocity": [5, -2],
+      "radius": 0.5,
+      "mass": 1.0
+    },
+    {
+      "type": "Circle", 
+      "id": "ball2",
+      "position": [3, 4],
+      "velocity": [-5, -2],
+      "radius": 0.8,
+      "mass": 2.0
+    },
+    {
+      "type": "Circle",
+      "id": "ball3", 
+      "position": [0, 6],
+      "velocity": [0, 0],
+      "radius": 0.3,
+      "mass": 0.5
+    }
+  ],
+  "forces": {
+    "clear_defaults": false,
+    "gravity": {"vector": [0, -9.81]},
+    "drag": {"coefficient": 0.05},
+    "springs": [
+      {
+        "obj1_id": "ball2",
+        "obj2_id": "ball3",
+        "spring_constant": 20.0,
+        "rest_length": 1.5,
+        "damping": 2.0
+      }
+    ],
+    "constant_forces": [
+      {
+        "force": [1, 0],
+        "object_ids": ["ball1"]
+      }
+    ]
+  },
+  "planes": [
+    {"point": [0, -7], "normal": [0, 1]},
+    {"point": [-9, 0], "normal": [1, 0]},
+    {"point": [9, 0], "normal": [-1, 0]}
+  ]
+}
