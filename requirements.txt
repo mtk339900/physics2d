@@ -1,0 +1,53 @@
+# 2D Physics Simulator Requirements
+# Production-ready physics engine with visualization
+
+# Core dependencies
+numpy>=1.20.0
+matplotlib>=3.5.0
+
+# Optional dependencies for enhanced functionality
+PyYAML>=6.0
+# Enables YAML configuration file support
+# If not installed, only JSON configuration will be available
+
+# Development and testing dependencies (optional)
+# pytest>=7.0.0
+# pytest-cov>=4.0.0
+# black>=22.0.0
+# flake8>=5.0.0
+# mypy>=0.991
+
+# Performance profiling (optional)
+# cProfile
+# line_profiler
+
+# Documentation generation (optional)  
+# sphinx>=5.0.0
+# sphinx-rtd-theme>=1.0.0
+
+# Jupyter notebook support (optional)
+# jupyter>=1.0.0
+# ipywidgets>=8.0.0
+
+# Additional visualization backends (optional)
+# pillow>=9.0.0  # For saving animation frames as images
+# ffmpeg-python>=0.2.0  # For video export (requires system ffmpeg)
+
+# Version specifications:
+# - numpy: Core numerical computing, vector operations, and mathematical functions
+# - matplotlib: Real-time visualization, animation, and plot export
+# - PyYAML: YAML configuration file parsing (optional but recommended)
+#
+# Minimum Python version: 3.7+
+# Recommended Python version: 3.9+
+#
+# Platform compatibility: Windows, macOS, Linux
+# 
+# Installation:
+# pip install -r requirements.txt
+#
+# For minimal installation (core functionality only):
+# pip install numpy matplotlib
+#
+# For full installation with all optional features:
+# pip install numpy matplotlib PyYAML pillow
